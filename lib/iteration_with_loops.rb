@@ -8,10 +8,17 @@ def find_even_values(src)
   [7,8,9]
 ]
  
-find_even_values(array_of_arrays)
-p array_of_arrays[0][1]
-p array_of_arrays[1][0]
-p array_of_arrays[1][2]
-p array_of_arrays[2][1]
+def find_even_values(array_of_arrays)
+  row_index = 0 
+  while row_index < array_of_arrays.count
+  element_index < array_of_arrays[row_index].count do 
+    if array_of_arrays[row_index][element_index].even?
+      p array_of_arrays[row_index][element_index]
+    end
+    element_index +=1
+  end
+  row_index += 1 
+end
+end
 
 end
